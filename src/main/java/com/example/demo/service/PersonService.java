@@ -39,7 +39,7 @@ public class PersonService {
 	}
 	
 	public Iterable<Person> findByNameOrderByCreatedDateDesc(String lastName){
-		return personDao.findByLastNameOrderByCreatedDatesDesc(lastName);
+		return personDao.findByLastNameOrderByCreatedDateDesc(lastName);
 	}
 	
 	public Iterable<Person> findByLastNameLike(String lastName){
@@ -51,7 +51,7 @@ public class PersonService {
 	}
 	
 	public Iterable<Person> findByCreatedDatesBetween(Date startdate, Date enddate){
-		return personDao.findByCreatedDatesBetween(startdate, enddate);
+		return personDao.findByCreatedDateBetween(startdate, enddate);
 	}
 	
 }

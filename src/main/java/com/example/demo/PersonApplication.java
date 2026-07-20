@@ -26,7 +26,7 @@ public class PersonApplication implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		//createPersons();
+		createPersons();
 		getPersonByIds();
 		
 	}

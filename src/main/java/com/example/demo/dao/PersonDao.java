@@ -25,7 +25,7 @@ public interface PersonDao  extends JpaRepository<Person, Integer>{
 	//ResultSet will be converted into Iterable<Person> Class
 	
 	//OrderBy KeyWord == sorts the data
-	public Iterable<Person> findByLastNameOrderByCreatedDatesDesc(String lastName);
+	public Iterable<Person> findByLastNameOrderByCreatedDateDesc(String lastName);
 	// select * from tbl_person where last_name = lastName order by created_date desc
 	
 	//LessThanEquel KeWord 
@@ -41,7 +41,7 @@ public interface PersonDao  extends JpaRepository<Person, Integer>{
 	
 	
 	//By Dates ===> Comparison between Dates
-	public Iterable<Person> findByCreatedDatesBetween(Date startdate, Date endDate);
+	public Iterable<Person> findByCreatedDateBetween(Date startdate, Date endDate);
 	
 	
 	
